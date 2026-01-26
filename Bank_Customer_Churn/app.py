@@ -48,9 +48,9 @@ st.markdown("""
 @st.cache_resource
 def load_models():
     """Load trained model, scaler, and encoders"""
-    model = joblib.load('random_forest_model.pkl')
-    scaler = joblib.load('scaler.pkl')
-    label_encoders = joblib.load('label_encoders.pkl')
+    model = joblib.load('Bank_Customer_Churn/random_forest_model.pkl')
+    scaler = joblib.load('Bank_Customer_Churn/scaler.pkl')
+    label_encoders = joblib.load('Bank_Customer_Churn/label_encoders.pkl')
     return model, scaler, label_encoders
 
 try:
