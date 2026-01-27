@@ -601,13 +601,7 @@ elif app_mode == "Model Info":
     # Feature importance visualization
     st.subheader("📊 Feature Importance Visualization")
     
-    feature_names = [
-        'Age', 'NumOfProducts', 'IsActiveMember', 'Balance', 'Geography_Encoded',
-        'Complain', 'CreditScore', 'EstimatedSalary', 'Satisfaction Score',
-        'Tenure', 'Gender_Encoded', 'Point Earned', 'HasCrCard',
-        'Card Type_Encoded', 'AgeGroup_Encoded', 'Tenure_Category_Encoded',
-        'Balance_Category_Encoded', 'CreditScore_Category_Encoded'
-    ]
+    feature_names = ['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary', 'Complain', 'Satisfaction Score', 'Point Earned', 'Geography_Encoded', 'Gender_Encoded', 'Card Type_Encoded', 'AgeGroup_Encoded', 'Tenure_Category_Encoded', 'Balance_Category_Encoded', 'CreditScore_Category_Encoded']
     
     importances = model.feature_importances_
     importance_df = pd.DataFrame({
