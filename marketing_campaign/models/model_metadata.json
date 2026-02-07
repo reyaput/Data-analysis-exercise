@@ -1,0 +1,18 @@
+{
+    "model_name": "XGBoost",
+    "training_date": "2026-02-07 20:29:57",
+    "performance": {
+        "f1_score": 0.693625181854252,
+        "roc_auc": 0.8421339848146272,
+        "precision": 0.5391138980263158,
+        "recall": 0.9722840192806822,
+        "accuracy": 0.76835
+    },
+    "feature_count": 20,
+    "training_samples": 160000,
+    "test_samples": 40000,
+    "success_criteria": {
+        "roi_threshold": 5,
+        "conversion_rate_threshold": 0.08
+    }
+}
